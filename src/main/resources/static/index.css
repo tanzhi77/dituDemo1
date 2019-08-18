@@ -1,0 +1,40 @@
+.upfile{margin: 0px auto 20px auto;}
+.upfile label{display:none;}
+
+.upfile-advanced{position:relative;width:200px;height:200px;}
+.upfile-advanced label{display:block;width:100%;height:100%;background-color:#f4f7fc;background-repeat:no-repeat;background-position:center;background-size:contain;color:#999;z-index:1;}
+.upfile-advanced label:before{content:'请选择图片';position:absolute;top:50%;left:0;width:100%;margin-top:-0.5em;font:24px/1 Arial,'\5fae\8f6f\96c5\9ed1';text-align:center;}
+.upfile-advanced input{position:absolute;top:0;left:0;width:100%;height:100%;opacity:0;cursor:pointer;}
+.upfile-advanced label.set:before{display:none;}
+.upfile-advanced label.rotate-90{
+    -webkit-transform:rotate(90deg);
+    -moz-transform:rotate(90deg);
+    -o-transform:rotate(900deg);
+    transform:rotate(900deg);
+}
+.upfile-advanced label.rotate-180{
+    -webkit-transform:rotate(180deg);
+    -moz-transform:rotate(180deg);
+    -o-transform:rotate(180deg);
+    transform:rotate(180deg);
+}
+.upfile-advanced label.rotate-270{
+    -webkit-transform:rotate(270deg);
+    -moz-transform:rotate(270deg);
+    -o-transform:rotate(270deg);
+    transform:rotate(270deg);
+}
+
+.show-pictures{position:relative;width:200px;height:180px;margin: 0px auto 20px auto; padding-top: 20px}
+.show-pictures img{display:block;width:100%;height:auto;z-index:1;}
+
+.item-text{
+    min-height: 38px;
+    width: 300px;
+    height: auto;
+    line-height: 26px;
+    padding: 6px 10px;
+    white-space:normal;
+    word-break:break-all;
+    word-wrap:break-word;
+}

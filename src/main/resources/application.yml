@@ -1,0 +1,33 @@
+server:
+  port: 8988
+spring:
+  freemarker:
+    allow-request-override: false
+    cache: false
+    check-template-location: true
+    charset: UTF-8
+    content-type: text/html
+    expose-request-attributes: false
+    expose-session-attributes: false
+    expose-spring-macro-helpers: false
+    #设置面板后缀
+    suffix: .ftl
+  servlet:
+    multipart:
+      max-file-size: 100Mb
+      max-request-size: 100Mb
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url:  jdbc:mysql://localhost:3306/tanzhi?useUnicode=true&characterEncoding=utf8&rewriteBatchedStatements=true&useConfigs=maxPerformance&useSSL=false
+    username: root
+    password: 123456
+
+mybatis:
+  mapper-locations: classpath:mapping/*Mapper.xml
+  type-aliases-package: com.tanzhi.pojo
+#showSql
+logging:
+  level:
+    com:
+      hy:
+        mapper: debug
